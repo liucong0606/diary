@@ -1,0 +1,9 @@
+2020-08-14
+内容：
+	1. 学习了策略模式，并分析了工厂模式与策略模式的区别
+	2. 如何使ArrayList线程安全，Collections.synchronizedList(list);
+	3. 学习了观察者模式
+	4. 复习了静态代理模式
+	5. 复习了JDK动态代理模式
+	6. 复习了CGLIB动态代理模式
+	7. 学习了CGLIB动态代理创建有参对象  Singer singer = (Singer) e.create(new Class[]{String.class}, new Object[] {"Camila"});
