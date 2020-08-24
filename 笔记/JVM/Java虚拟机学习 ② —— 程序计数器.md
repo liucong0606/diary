@@ -9,8 +9,9 @@
 * https://blog.csdn.net/fanxing1964/article/details/79349824
 * https://www.cnblogs.com/manayi/p/9290490.html
 * https://blog.csdn.net/leaf_0303/article/details/78953669
+* https://blog.csdn.net/jiangyang100/article/details/90614280
 
-**（以上博客链接如有冒犯，请联系我删除）**
+**（如有冒犯以上博客链接，请联系我删除）**
 
 
 
@@ -48,6 +49,7 @@ Java虚拟机在执行Java程序的过程中会把它所管理的内存划分为
 
 * 线程隔离性，每个线程工作时都有属于自己的独立计数器；
 * 执行Java方法时，程序计数器是有值的，且记录的是正在执行的字节码指令的地址；
+* 如果正在执行的是Native 方法，则这个计数器值为空。Native方法大多是通过C实现并未编译成需要执行的字节码指令，也就不需要去存储字节码文件的行号了；
 * 程序计数器占用内存很小；
 * 程序计数器时唯一一个在Java虚拟机规范中没有规定任何OOM（OutOfMemory）的区域。
 
@@ -83,5 +85,5 @@ javap -c Demo.class	# 再将字节码文件反编译成汇编形式
 
 ![02_javap反编译查看计数器记录](C:\rep\diary\笔记\JVM\doc\02_javap反编译查看计数器记录.png)
 
-我们看到圈起来很多数字，这些数字就是偏移地址，它们记录程序每一步的地址。
+我们看到圈起来很多数字，这些数字就是偏移地址，它们记录程序每个步骤字节码的地址。
 
