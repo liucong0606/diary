@@ -1,4 +1,4 @@
-# Java虚拟机学习 ③ —— 本地方法栈
+# Java虚拟机学习 ④ —— 本地方法栈
 
 ## 学习摘自
 
@@ -6,6 +6,7 @@
 
 * 《深入理解Java虚拟机  JVM高级特性与最佳实践》  周志明 著
 * https://www.cnblogs.com/wade-luffy/p/5813747.html
+* https://blog.csdn.net/qq_33605778/article/details/78719879
 
 **（如有冒犯以上博客链接，请联系我删除）**
 
@@ -32,23 +33,3 @@ public class INative {
 ```
 
 以上native方法看起来与abstract方法差不多，native方法相当于是给C库做抽象方法，而abstract方法是给Java代码做抽象方法。
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
